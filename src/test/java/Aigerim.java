@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -42,6 +43,7 @@ public class Aigerim {
         if(driver.getCurrentUrl().contains("Bishkek")){
             System.out.println("Search is succesfull");
         }
+
     }
     @Test(priority = 1)
     public void negativeSearchPackages(){
